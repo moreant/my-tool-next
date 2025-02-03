@@ -40,6 +40,15 @@ export const generatedRoutes: GeneratedRoute[] = [
     }
   },
   {
+    name: 'back-action',
+    path: '/back-action',
+    component: 'layout.base$view.back-action',
+    meta: {
+      title: '备份任务',
+      order: 2
+    }
+  },
+  {
     name: 'home',
     path: '/home',
     component: 'layout.base$view.home',

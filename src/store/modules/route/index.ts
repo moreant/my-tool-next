@@ -28,6 +28,7 @@ export const useRouteStore = defineStore(SetupStoreId.Route, () => {
   const tabStore = useTabStore();
   const { bool: isInitConstantRoute, setBool: setIsInitConstantRoute } = useBoolean();
   const { bool: isInitAuthRoute, setBool: setIsInitAuthRoute } = useBoolean();
+  const fetchUserInfoTime = ref(0);
 
   /**
    * Auth route mode
@@ -318,7 +319,11 @@ export const useRouteStore = defineStore(SetupStoreId.Route, () => {
   }
 
   async function onRouteSwitchWhenLoggedIn() {
-    await authStore.initUserInfo();
+    // 5分钟内不重复获取用户信息，除非主动 F5
+    if (Date.now() - fetchUserInfoTime.value > 1000 * 60 * 5) {
+      await authStore.initUserInfo();
+      fetchUserInfoTime.value = Date.now();
+    }
   }
 
   async function onRouteSwitchWhenNotLoggedIn() {
