@@ -11,8 +11,7 @@ export const generatedRoutes: GeneratedRoute[] = [
     path: '/403',
     component: 'layout.blank$view.403',
     meta: {
-      title: '403',
-      i18nKey: 'route.403',
+      title: '无权限',
       constant: true,
       hideInMenu: true
     }
@@ -22,8 +21,7 @@ export const generatedRoutes: GeneratedRoute[] = [
     path: '/404',
     component: 'layout.blank$view.404',
     meta: {
-      title: '404',
-      i18nKey: 'route.404',
+      title: '页面不存在',
       constant: true,
       hideInMenu: true
     }
@@ -33,8 +31,7 @@ export const generatedRoutes: GeneratedRoute[] = [
     path: '/500',
     component: 'layout.blank$view.500',
     meta: {
-      title: '500',
-      i18nKey: 'route.500',
+      title: '服务器错误',
       constant: true,
       hideInMenu: true
     }
@@ -53,8 +50,7 @@ export const generatedRoutes: GeneratedRoute[] = [
     path: '/home',
     component: 'layout.base$view.home',
     meta: {
-      title: 'home',
-      i18nKey: 'route.home',
+      title: '首页',
       icon: 'mdi:monitor-dashboard',
       order: 1
     }
@@ -66,7 +62,6 @@ export const generatedRoutes: GeneratedRoute[] = [
     props: true,
     meta: {
       title: 'iframe-page',
-      i18nKey: 'route.iframe-page',
       constant: true,
       hideInMenu: true,
       keepAlive: true
@@ -78,8 +73,7 @@ export const generatedRoutes: GeneratedRoute[] = [
     component: 'layout.blank$view.login',
     props: true,
     meta: {
-      title: 'login',
-      i18nKey: 'route.login',
+      title: '登录',
       constant: true,
       hideInMenu: true
     }
