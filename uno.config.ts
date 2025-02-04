@@ -23,7 +23,7 @@ export default defineConfig<Theme>({
     }
   },
   shortcuts: {
-    'card-wrapper': 'rd-8px shadow-sm'
+    'card-wrapper': 'rd-3px shadow-sm'
   },
   transformers: [transformerDirectives(), transformerVariantGroup()],
   presets: [presetUno({ dark: 'class' }), presetSoybeanAdmin()]
