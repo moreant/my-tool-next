@@ -22,4 +22,5 @@ export const views: Record<LastLevelRouteKey, RouteComponent | (() => Promise<Ro
   login: () => import("@/views/_builtin/login/index.vue"),
   "back-action": () => import("@/views/back-action/index.vue"),
   home: () => import("@/views/home/index.vue"),
+  "text-convert_nr-buffer": () => import("@/views/text-convert/nr-buffer/index.vue"),
 };

@@ -78,5 +78,25 @@ export const generatedRoutes: GeneratedRoute[] = [
       constant: true,
       hideInMenu: true
     }
+  },
+  {
+    name: 'text-convert',
+    path: '/text-convert',
+    component: 'layout.base',
+    meta: {
+      title: '文本处理',
+      constant: true,
+      order: 2
+    },
+    children: [
+      {
+        name: 'text-convert_nr-buffer',
+        path: '/text-convert/nr-buffer',
+        component: 'view.text-convert_nr-buffer',
+        meta: {
+          title: 'NR Buffer'
+        }
+      }
+    ]
   }
 ];

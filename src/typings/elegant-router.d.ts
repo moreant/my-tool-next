@@ -24,6 +24,8 @@ declare module "@elegant-router/types" {
     "home": "/home";
     "iframe-page": "/iframe-page/:url";
     "login": "/login/:module(pwd-login|code-login|register|reset-pwd|bind-wechat)?";
+    "text-convert": "/text-convert";
+    "text-convert_nr-buffer": "/text-convert/nr-buffer";
   };
 
   /**
@@ -62,6 +64,7 @@ declare module "@elegant-router/types" {
     | "home"
     | "iframe-page"
     | "login"
+    | "text-convert"
   >;
 
   /**
@@ -85,6 +88,7 @@ declare module "@elegant-router/types" {
     | "login"
     | "back-action"
     | "home"
+    | "text-convert_nr-buffer"
   >;
 
   /**
