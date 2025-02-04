@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { computed, reactive } from 'vue';
+import { useRouter } from 'vue-router';
 import { $t } from '@/locales';
 // import { loginModuleRecord } from '@/constants/app';
 // import { useRouterPush } from '@/hooks/common/router';
@@ -9,6 +10,8 @@ import { useAuthStore } from '@/store/modules/auth';
 defineOptions({
   name: 'PwdLogin'
 });
+
+const router = useRouter();
 
 const authStore = useAuthStore();
 // const { toggleLoginModule } = useRouterPush();
@@ -72,6 +75,10 @@ async function handleSubmit() {
 // async function handleAccountLogin(account: Account) {
 //   await authStore.login(account.userName, account.password);
 // }
+
+function handleNoAccountLogin() {
+  router.push('/');
+}
 </script>
 
 <template>
@@ -99,7 +106,7 @@ async function handleSubmit() {
       <NButton type="primary" size="large" round block :loading="authStore.loginLoading" @click="handleSubmit">
         {{ $t('common.confirm') }}
       </NButton>
-      <NButton class="flex-1" block>无账号登录</NButton>
+      <NButton class="flex-1" block @click="handleNoAccountLogin">无账号登录</NButton>
       <!--
       <div class="flex-y-center justify-between gap-12px">
         <NButton class="flex-1" block @click="toggleLoginModule('code-login')">

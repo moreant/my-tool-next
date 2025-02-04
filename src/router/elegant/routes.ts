@@ -52,7 +52,8 @@ export const generatedRoutes: GeneratedRoute[] = [
     meta: {
       title: '首页',
       icon: 'mdi:monitor-dashboard',
-      order: 1
+      order: 1,
+      constant: true
     }
   },
   {
