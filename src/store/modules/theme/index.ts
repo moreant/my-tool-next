@@ -59,9 +59,7 @@ export const useThemeStore = defineStore(SetupStoreId.Theme, () => {
 
   /** Reset store */
   function resetStore() {
-    const themeStore = useThemeStore();
-
-    themeStore.$reset();
+    settings.value = initThemeSettings(false);
   }
 
   /**
