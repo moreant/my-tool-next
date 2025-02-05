@@ -85,6 +85,7 @@ export const generatedRoutes: GeneratedRoute[] = [
     component: 'layout.base',
     meta: {
       title: '文本处理',
+          icon: 'mdi:format-text',
       constant: true,
       order: 2
     },
@@ -94,7 +95,8 @@ export const generatedRoutes: GeneratedRoute[] = [
         path: '/text-convert/nr-buffer',
         component: 'view.text-convert_nr-buffer',
         meta: {
-          title: 'NR Buffer'
+          title: 'NR Buffer',
+          icon:'mdi:numeric-10-box-multiple-outline'
         }
       }
     ]
