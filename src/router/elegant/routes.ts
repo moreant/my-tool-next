@@ -37,6 +37,17 @@ export const generatedRoutes: GeneratedRoute[] = [
     }
   },
   {
+    name: 'about',
+    path: '/about',
+    component: 'layout.base$view.about',
+    meta: {
+      title: '关于',
+      icon: 'fluent:book-information-24-regular',
+      order: Number.MAX_SAFE_INTEGER,
+      constant: true
+    }
+  },
+  {
     name: 'back-action',
     path: '/back-action',
     component: 'layout.base$view.back-action',
