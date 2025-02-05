@@ -43,7 +43,7 @@ export const generatedRoutes: GeneratedRoute[] = [
     meta: {
       title: '关于',
       icon: 'fluent:book-information-24-regular',
-      order: Number.MAX_SAFE_INTEGER,
+      order: 9999,
       constant: true
     }
   },
@@ -96,7 +96,7 @@ export const generatedRoutes: GeneratedRoute[] = [
     component: 'layout.base',
     meta: {
       title: '文本处理',
-          icon: 'mdi:format-text',
+      icon: 'mdi:format-text',
       constant: true,
       order: 2
     },
@@ -107,7 +107,7 @@ export const generatedRoutes: GeneratedRoute[] = [
         component: 'view.text-convert_nr-buffer',
         meta: {
           title: 'NR Buffer',
-          icon:'mdi:numeric-10-box-multiple-outline'
+          icon: 'mdi:numeric-10-box-multiple-outline'
         }
       }
     ]
