@@ -2,6 +2,25 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [0.0.2](https://github.com/soybeanjs/soybean-admin/compare/v0.0.1...v0.0.2) (2025-02-05)
+
+
+### Features
+
+* 干掉 i18n ([75cd01c](https://github.com/soybeanjs/soybean-admin/commit/75cd01c7c3e698a40a0aee6daf3859d65b6b3823))
+* **about:** 底部显示构建日期 ([01d574e](https://github.com/soybeanjs/soybean-admin/commit/01d574e0f9debb55f002341b0e332b7374a78021))
+* **about:** 删除首页无演示页面的提示 ([e7084fc](https://github.com/soybeanjs/soybean-admin/commit/e7084fca07a913c5e0182620b32a77fe44719faf))
+* **about:** 新增关于界面用于显示开源组件许可 ([ca3ecd3](https://github.com/soybeanjs/soybean-admin/commit/ca3ecd3b441a0b7d301a899ddc84937437611675))
+* **convert:** 添加web处理的菜单icon ([1ac8086](https://github.com/soybeanjs/soybean-admin/commit/1ac8086b85caa0dc6f2de08ac58df65add6e7697))
+* **convert:** node-RED Buffer ([3534a31](https://github.com/soybeanjs/soybean-admin/commit/3534a3157e2fb795dc89f64151940bf39a20f9c0))
+* **login:** 支持免账号登录 ([73b83c8](https://github.com/soybeanjs/soybean-admin/commit/73b83c8117547cb8aa29783e23561cdb369bdc6b))
+* **theme:** 恢复圆角和主题色 ([874b5a4](https://github.com/soybeanjs/soybean-admin/commit/874b5a403f023b367993b7aa950259f3291a8137))
+
+
+### Bug Fixes
+
+* **theme:** 修复自带模板重置失败的问题 ([8e8cdd1](https://github.com/soybeanjs/soybean-admin/commit/8e8cdd1b1e70362467df58b4892af9a0c3607c11))
+
 ## 0.0.1 (2025-02-03)
 
 
