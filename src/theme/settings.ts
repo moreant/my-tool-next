@@ -55,7 +55,7 @@ export const themeSettings: App.Theme.ThemeSetting = {
   },
   watermark: {
     visible: false,
-    text: 'SoybeanAdmin'
+    text: 'MyToolsNext'
   },
   tokens: {
     light: {

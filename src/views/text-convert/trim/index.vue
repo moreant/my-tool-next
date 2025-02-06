@@ -16,7 +16,7 @@ watch(value, () => {
 
 <template>
   <div>
-    <NCard title="去空白">
+    <NCard title="去除空白">
       <NFlex vertical>
         <NRadioGroup v-model:value="type" name="type">
           <NRadio value="both">前后</NRadio>

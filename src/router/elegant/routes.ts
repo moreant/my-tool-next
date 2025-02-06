@@ -115,7 +115,7 @@ export const generatedRoutes: GeneratedRoute[] = [
         path: '/text-convert/trim',
         component: 'view.text-convert_trim',
         meta: {
-          title: '去空白',
+          title: '去除空白',
           icon: 'mdi:format-letter-spacing-variant'
         }
       }
