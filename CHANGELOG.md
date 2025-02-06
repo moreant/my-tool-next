@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [0.1.0](https://github.com/soybeanjs/soybean-admin/compare/v0.0.2...v0.1.0) (2025-02-06)
+
+
+### Features
+
+* **convert:** 添加去除空白 ([3ba9916](https://github.com/soybeanjs/soybean-admin/commit/3ba99168768a84eed42c97b861630097e815aa3a))
+* **theme:** soybeans 改为 MyToolsNext ([e96f827](https://github.com/soybeanjs/soybean-admin/commit/e96f8275f87034a62e85b5307eea9d5195cc2b28))
+
+
+### Bug Fixes
+
+* **route:** 修复关于菜单不在最下面的问题 ([d9a69a5](https://github.com/soybeanjs/soybean-admin/commit/d9a69a5200bd603752b4b408be963b761ab9eb2a))
+
 ## [0.0.2](https://github.com/soybeanjs/soybean-admin/compare/v0.0.1...v0.0.2) (2025-02-05)
 
 
