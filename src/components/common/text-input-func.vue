@@ -2,6 +2,9 @@
 import { useClipboard } from '@vueuse/core';
 
 const text = defineModel<string>('value', { required: true });
+defineProps<{
+  placeholder?: string;
+}>();
 
 const { copy, isSupported } = useClipboard();
 
@@ -23,7 +26,7 @@ async function onCopy() {
 
 <template>
   <NFlex vertical>
-    <NInput v-model:value="text" type="textarea" placeholder="nodered十进制" />
+    <NInput v-model:value="text" type="textarea" :placeholder="placeholder" />
     <NButton type="primary" @click="onCopy">复制</NButton>
   </NFlex>
 </template>

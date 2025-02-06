@@ -12,7 +12,6 @@ Licensed under MIT license
 <template>
   <div>
     <NCard title="开源组件许可">
-      <div>开源许可</div>
       <div class="whitespace-pre-wrap">
         {{ text }}
       </div>

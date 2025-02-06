@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { computed, ref } from 'vue';
-import TextInputFunc from './modules/text-input-func.vue';
+import TextInputFunc from '@/components/common/text-input-func.vue';
 
 // nodered Buffer 转十六进制
 const nrVal = ref('[1,70,0,1,0,1,2,0,123,98,180]');
@@ -40,20 +40,20 @@ const hexValDec = computed(() => {
       <NCard title="Node-RED Buffer 转十六进制">
         <NGrid x-gap="24" :cols="2">
           <NGi>
-            <TextInputFunc v-model:value="nrVal" />
+            <TextInputFunc v-model:value="nrVal" placeholder="nodered十进制" />
           </NGi>
           <NGi>
-            <TextInputFunc v-model:value="nrValHex" />
+            <TextInputFunc v-model:value="nrValHex" placeholder="十六进制" />
           </NGi>
         </NGrid>
       </NCard>
       <NCard title="十六进制转 Node-RED Buffer">
         <NGrid x-gap="24" :cols="2">
           <NGi>
-            <TextInputFunc v-model:value="hexVal" />
+            <TextInputFunc v-model:value="hexVal" placeholder="十六进制" />
           </NGi>
           <NGi>
-            <TextInputFunc v-model:value="hexValDec" />
+            <TextInputFunc v-model:value="hexValDec" placeholder="nodered十进制" />
           </NGi>
         </NGrid>
       </NCard>

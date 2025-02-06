@@ -24,4 +24,5 @@ export const views: Record<LastLevelRouteKey, RouteComponent | (() => Promise<Ro
   "back-action": () => import("@/views/back-action/index.vue"),
   home: () => import("@/views/home/index.vue"),
   "text-convert_nr-buffer": () => import("@/views/text-convert/nr-buffer/index.vue"),
+  "text-convert_trim": () => import("@/views/text-convert/trim/index.vue"),
 };

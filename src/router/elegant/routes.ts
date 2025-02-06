@@ -109,6 +109,15 @@ export const generatedRoutes: GeneratedRoute[] = [
           title: 'NR Buffer',
           icon: 'mdi:numeric-10-box-multiple-outline'
         }
+      },
+      {
+        name: 'text-convert_trim',
+        path: '/text-convert/trim',
+        component: 'view.text-convert_trim',
+        meta: {
+          title: '去空白',
+          icon: 'mdi:format-letter-spacing-variant'
+        }
       }
     ]
   }

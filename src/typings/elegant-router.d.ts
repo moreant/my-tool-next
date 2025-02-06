@@ -27,6 +27,7 @@ declare module "@elegant-router/types" {
     "login": "/login/:module(pwd-login|code-login|register|reset-pwd|bind-wechat)?";
     "text-convert": "/text-convert";
     "text-convert_nr-buffer": "/text-convert/nr-buffer";
+    "text-convert_trim": "/text-convert/trim";
   };
 
   /**
@@ -92,6 +93,7 @@ declare module "@elegant-router/types" {
     | "back-action"
     | "home"
     | "text-convert_nr-buffer"
+    | "text-convert_trim"
   >;
 
   /**
