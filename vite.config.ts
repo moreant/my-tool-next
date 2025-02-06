@@ -1,13 +1,16 @@
 import process from 'node:process';
 import { URL, fileURLToPath } from 'node:url';
+import type { CSSOptions } from 'vite';
 import { defineConfig, loadEnv } from 'vite';
 import { setupVitePlugins } from './build/plugins';
-import { createViteProxy, getBuildTime } from './build/config';
+import { createViteProxy, getBuildTime, getVersion } from './build/config';
 
-export default defineConfig(configEnv => {
+export default defineConfig(async configEnv => {
   const viteEnv = loadEnv(configEnv.mode, process.cwd()) as unknown as Env.ImportMeta;
 
   const buildTime = getBuildTime();
+
+  const version = await getVersion();
 
   const enableProxy = configEnv.command === 'serve' && !configEnv.isPreview;
 
@@ -26,10 +29,11 @@ export default defineConfig(configEnv => {
           additionalData: `@use "@/styles/scss/global.scss" as *;`
         }
       }
-    },
+    } as CSSOptions,
     plugins: setupVitePlugins(viteEnv, buildTime),
     define: {
-      BUILD_TIME: JSON.stringify(buildTime)
+      BUILD_TIME: JSON.stringify(buildTime),
+      VERSION: JSON.stringify(version)
     },
     server: {
       host: '0.0.0.0',

@@ -4,11 +4,12 @@ defineOptions({
 });
 
 const buildTime = BUILD_TIME;
+const version = VERSION;
 </script>
 
 <template>
   <DarkModeContainer class="h-full flex-center justify-start pl-16px text-gray-400">
-    build time: {{ buildTime }}
+    v{{ version }}@{{ buildTime }}
   </DarkModeContainer>
 </template>
 
