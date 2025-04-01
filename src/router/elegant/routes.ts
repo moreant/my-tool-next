@@ -118,7 +118,15 @@ export const generatedRoutes: GeneratedRoute[] = [
           title: '去除空白',
           icon: 'mdi:format-letter-spacing-variant'
         }
-      }
+      },
+      {
+        name: 'text-convert_maple-font',
+        path: '/text-convert/maple-font',
+        component: 'view.text-convert_maple-font',
+        meta: {
+          title: 'Maple 字体'
+        }
+      },
     ]
   }
 ];
