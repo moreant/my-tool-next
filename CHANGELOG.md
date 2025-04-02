@@ -2,6 +2,26 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [0.1.1](https://github.com/soybeanjs/soybean-admin/compare/v0.0.2...v0.1.1) (2025-04-02)
+
+
+### Features
+
+* **about:** 添加版本号显示 ([df59b4e](https://github.com/soybeanjs/soybean-admin/commit/df59b4e18081e41685ea8eac4be5b45d8fcaea9b))
+* **convert:** 添加去除空白 ([3ba9916](https://github.com/soybeanjs/soybean-admin/commit/3ba99168768a84eed42c97b861630097e815aa3a))
+* **convert:** 文本转换指定路由顺序和icon ([1304ebd](https://github.com/soybeanjs/soybean-admin/commit/1304ebdddf8f3a47e59e5ae6dbbf69bacc68eeba))
+* **convert:** 新增 Maple 字体转换功能，添加相关路由和样式支持 ([38cca1e](https://github.com/soybeanjs/soybean-admin/commit/38cca1e8f65b2260b0d515bd17c8374e880ed4e1))
+* **convert:** 增强文本去除空白功能，支持更多去除模式 ([b2c3f54](https://github.com/soybeanjs/soybean-admin/commit/b2c3f547d250c49e0fc38b6a614e8019f54da9b1))
+* **deploy:** 添加 GitHub Actions 部署工作流配置 ([262d789](https://github.com/soybeanjs/soybean-admin/commit/262d789a4c2c44adee0b643c516400f7a88a7cd6))
+* **theme:** soybeans 改为 MyToolsNext ([e96f827](https://github.com/soybeanjs/soybean-admin/commit/e96f8275f87034a62e85b5307eea9d5195cc2b28))
+
+
+### Bug Fixes
+
+* **convert:** 修复不传参数时不显示输入框的问题 ([19e16c6](https://github.com/soybeanjs/soybean-admin/commit/19e16c6a65b8e0588851ed6f326768bbc6e8a5cb))
+* **deploy:** 更新部署源路径为 dist/* 以确保正确部署所有文件 ([5f4e287](https://github.com/soybeanjs/soybean-admin/commit/5f4e287bd24f979cdf7c225ddebf445e22a21092))
+* **route:** 修复关于菜单不在最下面的问题 ([d9a69a5](https://github.com/soybeanjs/soybean-admin/commit/d9a69a5200bd603752b4b408be963b761ab9eb2a))
+
 ## [0.1.0](https://github.com/soybeanjs/soybean-admin/compare/v0.0.2...v0.1.0) (2025-02-06)
 
 
