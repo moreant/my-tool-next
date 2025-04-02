@@ -37,5 +37,5 @@ jobs:
           key: ${{ secrets.KEY }}
           passphrase: ${{ secrets.PASSPHRASE }}
           port: ${{ secrets.PORT }}
-          source: "dist"
+          source: "dist/*"
           target: /opt/my-tool-next
