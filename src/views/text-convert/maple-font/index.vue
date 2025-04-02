@@ -7,9 +7,11 @@ const inputValue = ref('');
 
 const route = useRoute();
 
-const s = route.query.s as string;
+const s = route.query.s;
 
-inputValue.value = Base64.decode(s);
+if (typeof s === 'string') {
+  inputValue.value = Base64.decode(s);
+}
 </script>
 
 <template>
