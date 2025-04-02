@@ -102,12 +102,23 @@ export const generatedRoutes: GeneratedRoute[] = [
     },
     children: [
       {
+        name: 'text-convert_maple-font',
+        path: '/text-convert/maple-font',
+        component: 'view.text-convert_maple-font',
+        meta: {
+          title: 'Maple 字体',
+          icon: 'mdi:font-size',
+          order: 3
+        }
+      },
+      {
         name: 'text-convert_nr-buffer',
         path: '/text-convert/nr-buffer',
         component: 'view.text-convert_nr-buffer',
         meta: {
           title: 'NR Buffer',
-          icon: 'mdi:numeric-10-box-multiple-outline'
+          icon: 'mdi:numeric-10-box-multiple-outline',
+          order: 1
         }
       },
       {
@@ -116,17 +127,10 @@ export const generatedRoutes: GeneratedRoute[] = [
         component: 'view.text-convert_trim',
         meta: {
           title: '去除空白',
-          icon: 'mdi:format-letter-spacing-variant'
+          icon: 'mdi:format-letter-spacing-variant',
+          order: 2
         }
-      },
-      {
-        name: 'text-convert_maple-font',
-        path: '/text-convert/maple-font',
-        component: 'view.text-convert_maple-font',
-        meta: {
-          title: 'Maple 字体'
-        }
-      },
+      }
     ]
   }
 ];
