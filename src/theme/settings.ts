@@ -58,7 +58,8 @@ export const themeSettings: App.Theme.ThemeSetting = {
   },
   watermark: {
     visible: false,
-    text: 'MyToolsNext'
+    text: 'MyToolsNext',
+    enableUserName: false
   },
   tokens: {
     light: {
