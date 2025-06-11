@@ -1,11 +1,11 @@
 <script setup lang="ts">
 import { computed, reactive } from 'vue';
 import { useRouter } from 'vue-router';
+import { useAuthStore } from '@/store/modules/auth';
+import { useFormRules, useNaiveForm } from '@/hooks/common/form';
 import { $t } from '@/locales';
 // import { loginModuleRecord } from '@/constants/app';
 // import { useRouterPush } from '@/hooks/common/router';
-import { useFormRules, useNaiveForm } from '@/hooks/common/form';
-import { useAuthStore } from '@/store/modules/auth';
 
 defineOptions({
   name: 'PwdLogin'
