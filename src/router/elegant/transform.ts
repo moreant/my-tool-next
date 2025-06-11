@@ -174,6 +174,7 @@ const routeMap: RouteMap = {
   "text-convert": "/text-convert",
   "text-convert_maple-font": "/text-convert/maple-font",
   "text-convert_nr-buffer": "/text-convert/nr-buffer",
+  "text-convert_replace-in-file": "/text-convert/replace-in-file",
   "text-convert_trim": "/text-convert/trim"
 };
 

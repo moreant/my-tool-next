@@ -28,6 +28,7 @@ declare module "@elegant-router/types" {
     "text-convert": "/text-convert";
     "text-convert_maple-font": "/text-convert/maple-font";
     "text-convert_nr-buffer": "/text-convert/nr-buffer";
+    "text-convert_replace-in-file": "/text-convert/replace-in-file";
     "text-convert_trim": "/text-convert/trim";
   };
 
@@ -95,6 +96,7 @@ declare module "@elegant-router/types" {
     | "home"
     | "text-convert_maple-font"
     | "text-convert_nr-buffer"
+    | "text-convert_replace-in-file"
     | "text-convert_trim"
   >;
 

@@ -122,6 +122,16 @@ export const generatedRoutes: GeneratedRoute[] = [
         }
       },
       {
+        name: 'text-convert_replace-in-file',
+        path: '/text-convert/replace-in-file',
+        component: 'view.text-convert_replace-in-file',
+        meta: {
+          title: '替换文件中的文本',
+          icon: 'mdi:file-replace',
+          order:4
+        }
+      },
+      {
         name: 'text-convert_trim',
         path: '/text-convert/trim',
         component: 'view.text-convert_trim',

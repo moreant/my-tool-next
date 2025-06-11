@@ -25,5 +25,6 @@ export const views: Record<LastLevelRouteKey, RouteComponent | (() => Promise<Ro
   home: () => import("@/views/home/index.vue"),
   "text-convert_maple-font": () => import("@/views/text-convert/maple-font/index.vue"),
   "text-convert_nr-buffer": () => import("@/views/text-convert/nr-buffer/index.vue"),
+  "text-convert_replace-in-file": () => import("@/views/text-convert/replace-in-file/index.vue"),
   "text-convert_trim": () => import("@/views/text-convert/trim/index.vue"),
 };
