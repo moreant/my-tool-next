@@ -3,19 +3,7 @@
   "type": "module",
   "version": "0.1.1",
   "description": "A fresh and elegant admin template, based on Vue3、Vite6、TypeScript、NaiveUI and UnoCSS. 一个基于Vue3、Vite6、TypeScript、NaiveUI and UnoCSS的清新优雅的中后台模版。",
-  "author": {
-    "name": "Soybean",
-    "email": "soybeanjs@outlook.com",
-    "url": "https://github.com/soybeanjs"
-  },
   "license": "MIT",
-  "homepage": "https://github.com/soybeanjs/soybean-admin",
-  "repository": {
-    "url": "https://github.com/soybeanjs/soybean-admin.git"
-  },
-  "bugs": {
-    "url": "https://github.com/soybeanjs/soybean-admin/issues"
-  },
   "keywords": [
     "Vue3 admin ",
     "vue-admin-template",
@@ -106,6 +94,5 @@
   "simple-git-hooks": {
     "commit-msg": "pnpm sa git-commit-verify",
     "pre-commit": "pnpm typecheck && pnpm lint && git diff --exit-code"
-  },
-  "website": "https://admin.soybeanjs.cn"
+  }
 }
