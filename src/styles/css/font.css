@@ -1,6 +1,6 @@
-@import url('https://fontsapi.zeoseven.com/521/main/result.css');
+@import 'https://chinese-fonts-cdn.deno.dev/packages/maple-mono-cn/dist/MapleMono-CN-Regular/result.css';
 
 body {
-  font-family: 'JetBrains Maple Mono';
+  font-family: 'Maple Mono CN';
   font-weight: normal;
 }

@@ -128,7 +128,7 @@ export const generatedRoutes: GeneratedRoute[] = [
         meta: {
           title: '替换文件中的文本',
           icon: 'mdi:file-replace',
-          order:4
+          order: 4
         }
       },
       {
